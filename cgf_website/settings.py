@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     # Local Apps
     'users.apps.UsersConfig',
+    'cgf.apps.CgfConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,7 +130,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# All Custom Settings
+# ***** All Custom Settings  *****
+
+# ** Static & Media settings
+# STATIC_ROOT = 'static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static/')
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 AUTH_USER_MODEL = 'users.CustomUser'
 

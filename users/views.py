@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import HttpResponse
 
-# Create your views here.
+
+def dummy_user_view(request):
+    return HttpResponse('Hello Peeps')

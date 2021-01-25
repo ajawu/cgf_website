@@ -1,0 +1,71 @@
+/* ----------------------------------------------- */
+/* ----------------- GENERAL SETUP --------------- */
+/* ----------------------------------------------- */
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #666;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------- NAVBAR STYLES --------------- */
+/* ----------------------------------------------- */
+header {
+    padding-bottom: 15px;
+}
+
+.navbar {
+    background-color: #0B0D17;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    margin-right: 4rem;
+    padding-top: 0;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    font-weight: 600;
+    font-size: 80%;
+    color: #fff !important;
+    border: 5px solid transparent;
+    transition: all 0.2s;
+    padding: 0 0 1rem 0 !important;
+    margin: .65rem 0 0 0;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #DA251C !important;
+    border-bottom: 5px solid #DA251C;
+}
+
+.overflow-text {
+    width: 60px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.size-15 {
+    font-size: 75% !important;
+}
+
+.full-button:link,
+.full-button:visited {
+    background-color: #DA251C;
+    border-radius: 7px;
+    padding: 6px 29px !important;
+    margin-top: 7px;
+    transition: all 0.2s;
+}
+
+.full-button:hover,
+.full-button:active {
+    background-color: #cb221a;
+    border-bottom: 5px solid transparent !important;
+    color: #fff !important;
+}
