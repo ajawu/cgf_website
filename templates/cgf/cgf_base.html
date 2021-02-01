@@ -1,0 +1,159 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CGF - Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    {#    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"#}
+    {#          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">#}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cgf_base.css' %}">
+    {% block additional_css %}
+    {% endblock %}
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'cgf:home_view' %}">
+                <img src="{% static 'images/cgf-logo.png' %}" alt="cgf-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link overflow-text" aria-current="page" href="{% url 'cgf:about_view' %}">About Us</a>
+                    </li>
+                    <li style="margin: 0 1.6rem;"></li>
+                    <li class="nav-item">
+                        <a class="nav-link overflow-text" href="#">Why Join us?</a>
+                    </li>
+                    <li style="margin: 0 2.3rem;"></li>
+                    <li class="nav-item">
+                        <a class="nav-link overflow-text" href="#">CGF Blog</a>
+                    </li>
+                    <li style="margin: 0 1.6rem;"></li>
+                    <li class="nav-item">
+                        <a class="nav-link overflow-text" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="d-flex navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link size-15" href="#">Sign In</a>
+                    </li>
+                    <li style="margin: 0 1.2rem;"></li>
+                    <li class="nav-item">
+                        <a class="nav-link size-15 full-button" href="#">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block header-section %}
+    {% endblock %}
+</header>
+{% block page-body %}
+{% endblock %}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm footer-banner">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <h5 class="banner-title">
+                            Become a part of the change you want to see
+                        </h5>
+                        <a href="#" class="full-button-white">Join our community</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <img src="{% static 'images/footer-banner-image.png' %}" alt="footer-banner-image"
+                             class="banner-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-4">
+        <div class="row p-5">
+            <div class="col-sm-5 pb-5">
+                <div class="">
+                    <img src="{% static 'images/cgf-logo.png' %}" class="footer-logo" alt="cgf-logo">
+                    <h5 class="footer-company-name d-inline-block">Classic Gentlemen</h5>
+                    <p class="copyright-text pt-3 pb-2">
+                        Copyright © 2021 Classic Gentlemen Foundation. <br>
+                        All rights reserved
+                    </p>
+                    <ul class="social-icons-list">
+                        <li>
+                            <div class="social-icon-container ig-container">
+                                <img src="{% static 'images/instagram-icon.png' %}" alt="instagram-icon"
+                                     class="instagram-icon"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="social-icon-container middle-icon">
+                                <img src="{% static 'images/twitter-icon.png' %}" alt="twitter-icon"
+                                     class="twitter-icon"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="social-icon-container fb-container">
+                                <img src="{% static 'images/facebook-logo.png' %}" alt="facebook-icon"
+                                     class="facebook-icon"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2 pb-5">
+                <h6 class="footer-links-title">Community</h6>
+                <a href="{% url 'cgf:about_view' %}" class="footer-link">About us</a>
+                <a href="#" class="footer-link">Blog</a>
+                <a href="#" class="footer-link">Contact us</a>
+                <a href="#" class="footer-link">Pricing</a>
+            </div>
+            <div class="col-sm-2 pb-5">
+                <h6 class="footer-links-title">Support</h6>
+                <a href="#" class="footer-link">Legal</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="col-sm-3 pb-5">
+                <h6 class="footer-links-title">Stay up to date</h6>
+                <div class="form-group mb-4">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" class="form-control shadow-none"
+                               required id="id_password" name="password">
+                        <span class="input-group-text back-red" id="basic-addon2">
+                            <img src="{% static 'images/send-icon.png' %}" alt="send-icon" class="email-send-icon">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{#<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"#}
+{#        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"#}
+{#        crossorigin="anonymous">#}
+{#</script>#}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous">
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

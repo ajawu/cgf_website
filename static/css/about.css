@@ -1,0 +1,191 @@
+/* ----------------------------------------------- */
+/* ----------------- ABOUT SECTION --------------- */
+/* ----------------------------------------------- */
+#about-section {
+    padding: 80px 0 60px;
+}
+
+.section-header-red {
+    color: var(--link-red);
+    font-weight: 500;
+    font-size: 89%;
+    text-transform: uppercase;
+}
+
+.section-subheader {
+    font-weight: 800;
+    font-size: 200%;
+    color: var(--black-text);
+    line-height: 50px;
+}
+
+.about-text {
+    font-size: 82%;
+    line-height: 27px;
+}
+
+.find-out-link {
+    font-size: 90% !important;
+    font-weight: 600 !important;
+}
+
+.mission-container {
+    background-color: var(--black-text);
+    border-radius: 8px;
+}
+
+.mission-text {
+    font-size: 85%;
+    color: #eee;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.mw-75 {
+    max-width: 500px;
+}
+
+#vision-mission-section {
+    padding: 80px 0 40px;
+}
+
+/* ------------------------------------------------- */
+/* ----------------- MEMBERS SECTION --------------- */
+/* ------------------------------------------------- */
+#executives-section {
+    padding: 80px 0 40px;
+}
+
+.member-image {
+    height: 212px;
+    width: 210px;
+}
+
+.member-name {
+    text-align: center;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 85%;
+    color: #23242A;
+    max-width: 220px;
+    margin-bottom: 0;
+}
+
+.member-position {
+    color: var(--light-gray-text);
+    font-size: 80%;
+    text-align: center;
+    max-width: 220px;
+}
+
+/* --------------------------------------------- */
+/* ----------------- FAQ SECTION --------------- */
+/* --------------------------------------------- */
+
+#faq-section {
+    padding: 60px 0 80px;
+}
+
+.faq-card {
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.list-group-item:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.list-group-item {
+    border: 1px solid transparent;
+    box-shadow: 0 0 2px 1px #E5E5E5;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 85%;
+    margin: 10px;
+}
+
+.card-body {
+    color: var(--gray-text);
+    font-size: 80%;
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 175%;
+    color: var(--black-text);
+}
+
+.red-text {
+    color: var(--link-red);
+}
+
+.subtitle {
+    font-size: 210%;
+    line-height: 52px;
+}
+
+.smaller-header {
+    font-size: 80%;
+}
+
+.join-card {
+    box-shadow: 0 0 2px 1px #E5E5E5;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.perks-list {
+    list-style: none;
+    padding: 0;
+}
+
+.perks-list li {
+    margin: 10px 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.join-title {
+    color: var(--link-red);
+    font-weight: 500;
+    font-size: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.amount-text {
+    font-weight: 600;
+    color: var(--black-text);
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+
+.subscript-year {
+    font-weight: 500;
+    font-size: 50%;
+}
+
+.join-link {
+    margin-right: 0 !important;
+    padding: 15px 85px !important;
+    font-size: 90% !important;
+}
+/*Romans 8: 1- 5,12,13 (5)?*/
+/*Luke 8: 1- 5*/
+
+.perks-list li {
+    color: var(--black-text);
+    font-size: 85%;
+    font-weight: 400;
+}
+
+.perks-list li img {
+    padding-right: 10px;
+    /*height: 12px;*/
+    width: 25px;
+}

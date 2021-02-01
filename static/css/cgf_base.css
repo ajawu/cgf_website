@@ -1,0 +1,276 @@
+/* ----------------------------------------------- */
+/* ----------------- VARIABLES --------------- */
+/* ----------------------------------------------- */
+:root {
+    --link-red: #DA251C;
+    --active-link-red: #bc2018;
+    --black-text: #0B0D17;
+    --gray-text: #18191F;
+    --light-gray-text: #656565;
+    --white-text: #fff
+}
+
+/* ----------------------------------------------- */
+/* ----------------- GENERAL UTILS --------------- */
+/* ----------------------------------------------- */
+
+.find-out-link:link,
+.find-out-link:visited {
+    color: var(--link-red);
+    font-weight: 700;
+    font-size: 75%;
+    text-decoration: none;
+}
+
+.find-out-link:hover,
+.find-out-link:active {
+    color: var(--active-link-red);
+}
+
+.find-out-arrow {
+    padding-left: 5px;
+}
+
+.hero-full-button:link,
+.hero-full-button:visited {
+    font-size: 100%;
+    background-color: var(--link-red);
+    border-radius: 7px;
+    padding: 11px 50px;
+    margin-top: 7px;
+    transition: all 0.2s;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.hero-full-button:hover,
+.hero-full-button:active {
+    background-color: var(--active-link-red);
+    color: var(--white-text) !important;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- GENERAL SETUP --------------- */
+/* ----------------------------------------------- */
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------- NAVBAR STYLES --------------- */
+/* ----------------------------------------------- */
+header {
+    padding-bottom: 0;
+    background-color: var(--black-text);
+}
+
+.navbar {
+    background-color: var(--black-text);
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    margin-right: 4rem;
+    padding-top: 0;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    font-weight: 600;
+    font-size: 80%;
+    color: var(--white-text) !important;
+    border: 4px solid transparent;
+    transition: all 0.2s;
+    padding: 0 0 1rem 0 !important;
+    margin: .65rem 0 0 0;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--link-red) !important;
+    border-bottom: 4px solid #DA251C;
+}
+
+.overflow-text {
+    width: 70px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.size-15 {
+    font-size: 75% !important;
+}
+
+.full-button:link,
+.full-button:visited {
+    background-color: var(--link-red);
+    border-radius: 7px;
+    padding: 6px 29px !important;
+    margin-top: 7px;
+    transition: all 0.2s;
+}
+
+.full-button:hover,
+.full-button:active {
+    background-color: #cb221a;
+    border-bottom: 5px solid transparent !important;
+    color: var(--white-text) !important;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- FOOTER SECTION --------------- */
+/* ----------------------------------------------- */
+
+footer {
+    padding: 100px 0 0;
+    background-color: var(--black-text);
+}
+
+.footer-banner {
+    background-color: #CBCBCB;
+    border-radius: 4px;
+    padding: 0 0 0 70px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.banner-title {
+    font-weight: 800;
+    font-size: 200%;
+    color: var(--black-text);
+    max-width: 470px;
+    line-height: 54px;
+    margin: 60px 0;
+}
+
+.full-button-white:link,
+.full-button-white:visited {
+    background-color: var(--white-text);
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-weight: 600;
+    color: var(--link-red);
+    text-align: center;
+    text-decoration: none;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+.full-button-white:hover,
+.full-button-white:active {
+    background-color: #eee;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-company-name {
+    color: var(--white-text);
+    font-weight: 700;
+    font-size: 120%;
+    padding-top: 4px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.copyright-text {
+    color: #D9DBE1;
+    font-size: 74%;
+    line-height: 28px;
+}
+
+.social-icons-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons-list li {
+    display: inline-block;
+}
+
+.middle-icon {
+    margin: 0 12px;
+    padding: 2px 10px;
+}
+
+.social-icon-container {
+    border-radius: 50%;
+    text-align: center;
+    background-color: #24232E;
+    display: inline-block;
+}
+
+.instagram-icon {
+    height: 17px;
+}
+
+.twitter-icon {
+    height: 13px;
+}
+
+.facebook-icon {
+    height: 20px;
+}
+
+.fb-container {
+    padding: 1px 8px 3px 8px;;
+}
+
+.ig-container {
+    padding: 1px 9px 3px 9px;
+}
+
+.footer-links-title {
+    color: var(--white-text);
+    font-weight: 500;
+    font-size: 95%;
+    margin-bottom: 23px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 75%;
+    color: #D9DBE1;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: var(--link-red);
+}
+
+.back-red {
+    background-color: var(--link-red) !important;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.email-send-icon {
+    width: 21px;
+    height: 15px;
+}
+
+.form-control {
+    border: 1px solid #3D3B45;
+    background-color: #3D3B45;
+    color: #D9DBE1;
+    font-size: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control::placeholder {
+    color: #D9DBE1;
+}
