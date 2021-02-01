@@ -1,4 +1,13 @@
 /* ----------------------------------------------- */
+/* ----------------- VARIABLES --------------- */
+/* ----------------------------------------------- */
+:root {
+    --link-red: #DA251C;
+    --active-link-red: #bc2018;
+}
+
+
+/* ----------------------------------------------- */
 /* ----------------- GENERAL SETUP --------------- */
 /* ----------------------------------------------- */
 html, body {
@@ -6,7 +15,7 @@ html, body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #666;
+    color: #000;
 }
 
 
@@ -15,6 +24,7 @@ html, body {
 /* ----------------------------------------------- */
 header {
     padding-bottom: 15px;
+    background-color: #0B0D17;
 }
 
 .navbar {
@@ -32,7 +42,7 @@ header {
     font-weight: 600;
     font-size: 80%;
     color: #fff !important;
-    border: 5px solid transparent;
+    border: 4px solid transparent;
     transition: all 0.2s;
     padding: 0 0 1rem 0 !important;
     margin: .65rem 0 0 0;
@@ -41,11 +51,11 @@ header {
 .nav-link:hover,
 .nav-link:active {
     color: #DA251C !important;
-    border-bottom: 5px solid #DA251C;
+    border-bottom: 4px solid #DA251C;
 }
 
 .overflow-text {
-    width: 60px;
+    width: 70px;
     overflow: visible;
     white-space: nowrap;
 }
@@ -68,4 +78,432 @@ header {
     background-color: #cb221a;
     border-bottom: 5px solid transparent !important;
     color: #fff !important;
+}
+
+
+/* ---------------------------------------------- */
+/* ----------------- HERO SECTION --------------- */
+/* ---------------------------------------------- */
+.header-padding {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.hero-text {
+    font-weight: 800;
+    color: #fff;
+    font-size: 320%;
+
+}
+
+.gold-light {
+    color: #E3BA2E;
+    font-weight: 700;
+}
+
+.hero-subtext {
+    color: #fff;
+    font-weight: 300;
+    font-size: 115%;
+}
+
+.side-spacing {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.hero-full-button:link,
+.hero-full-button:visited {
+    font-size: 100%;
+    background-color: #DA251C;
+    border-radius: 7px;
+    padding: 11px 50px;
+    margin-top: 7px;
+    transition: all 0.2s;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.hero-full-button:hover,
+.hero-full-button:active {
+    background-color: #bc2018;
+    color: #fff !important;
+}
+
+.hero-play-link {
+    color: #DA251C;
+    font-size: 100%;
+}
+
+.already-member-text {
+    color: #ffffff;
+    font-size: 80%;
+}
+
+.hero-sign-in:link,
+.hero-sign-in:visited {
+    color: #DA251C;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    /*text-decoration: underline;*/
+}
+
+.hero-sign-in:hover,
+.hero-sign-in:active {
+    color: #bc2018;
+}
+
+.hero-image {
+    background-color: #0B0D17;
+}
+
+/* ------------------------------------------------- */
+/* ----------------- JOIN US SECTION --------------- */
+/* ------------------------------------------------- */
+
+#join-us-section {
+    padding: 80px 0;
+}
+
+.join-us-header {
+    font-weight: 800;
+    font-size: 195%;
+}
+
+.join-us-subheader {
+    font-size: 95%;
+    font-weight: 400;
+}
+
+.join-icon-container {
+    background-color: #FAFAFA;
+    padding: 20px;
+    display: inline-block;
+}
+
+.join-card-title {
+    color: #18191F;
+    font-size: 105%;
+    font-weight: 600;
+}
+
+.join-card-body {
+    color: #18191F;
+    font-size: 78%;
+    max-width: 350px;
+}
+
+.find-out-link:link,
+.find-out-link:visited {
+    color: var(--link-red);
+    font-weight: 700;
+    font-size: 75%;
+    text-decoration: none;
+}
+
+.find-out-link:hover,
+.find-out-link:active {
+    color: var(--active-link-red);
+}
+
+.find-out-arrow {
+    padding-left: 5px;
+}
+
+/* ----------------------------------------------------- */
+/* ----------------- CORE VALUES SECTION --------------- */
+/* ----------------------------------------------------- */
+#core-values-section {
+    padding: 90px 0;
+}
+
+.core-values-image {
+    /*max-height: 500px;*/
+}
+
+.core-values-title {
+    font-weight: 800;
+    font-size: 200%;
+    padding-top: 80px;
+    color: #0B0D17;
+}
+
+.core-values-subtitle {
+    font-size: 77%;
+    max-width: 420px;
+    color: #18191F;
+    line-height: 22px;
+}
+
+.core-value-text {
+    font-size: 82%;
+    color: #18191F;
+    font-weight: 500;
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+
+.check-icon {
+    height: 28px;
+    width: 27px;
+    margin-right: 6px;
+}
+
+.core-value-items-container {
+    margin-top: 15px;
+}
+
+/* ------------------------------------------------------------ */
+/* ----------------- HIGHLIGHTED EVENTS SECTION --------------- */
+/* ------------------------------------------------------------ */
+#highlighted-events {
+    padding: 70px 0;
+    background-color: #FBFBFB;
+}
+
+.highlighted-events-header {
+    font-weight: 800;
+    color: #0B0D17;
+    font-size: 190%;
+}
+
+.highlighted-events-subheader {
+    font-size: 85%;
+}
+
+.event-title {
+    font-size: 100%;
+    font-weight: 600;
+    color: #18191F;
+    margin-bottom: 0;
+}
+
+.event-date {
+    color: var(--link-red);
+    font-size: 70%;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- POSTS SECTION --------------- */
+/* ----------------------------------------------- */
+#post-section {
+    padding: 80px 0;
+}
+
+.post-section-title {
+    color: var(--link-red);
+    font-weight: 500;
+    font-size: 85%;
+}
+
+.post-section-subtitle {
+    font-weight: 800;
+    font-size: 160%;
+    color: #0B0D17;
+}
+
+.post-image {
+    width: 90%;
+}
+
+.category-text {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 80%;
+}
+
+.dot-separator {
+    height: 6px;
+    margin: 0 10px;
+}
+
+.date-text {
+    display: inline-block;
+    color: #656565;
+    font-weight: 500;
+    font-size: 80%;
+}
+
+.post-title {
+    font-weight: 600;
+    font-size: 110%;
+    max-width: 450px;
+}
+
+.post-snippet {
+    color: #656565;
+    font-size: 78%;
+    letter-spacing: 0.02em;
+    max-width: 570px;
+    margin-bottom: 10px;
+}
+
+.author-name {
+    font-size: 80%;
+    letter-spacing: 0.02em;
+    margin-bottom: 3px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.author-position {
+    color: #656565;
+    margin-bottom: 0;
+    line-height: 17px;
+    font-size: 70%;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- FOOTER SECTION --------------- */
+/* ----------------------------------------------- */
+
+footer {
+    padding: 100px 0 0;
+    background-color: #0B0D17;
+}
+
+.footer-banner {
+    background-color: #CBCBCB;
+    border-radius: 4px;
+    padding: 0 0 0 70px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.banner-title {
+    font-weight: 800;
+    font-size: 200%;
+    color: #0B0D17;
+    max-width: 470px;
+    line-height: 54px;
+    margin: 60px 0;
+}
+
+.full-button-white:link,
+.full-button-white:visited {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-weight: 600;
+    color: var(--link-red);
+    text-align: center;
+    text-decoration: none;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+.full-button-white:hover,
+.full-button-white:active {
+    background-color: #eee;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-company-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 120%;
+    padding-top: 4px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.copyright-text {
+    color: #D9DBE1;
+    font-size: 74%;
+    line-height: 28px;
+}
+
+.social-icons-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons-list li {
+    display: inline-block;
+}
+
+.middle-icon {
+    margin: 0 12px;
+    padding: 2px 10px;
+}
+
+.social-icon-container {
+    border-radius: 50%;
+    text-align: center;
+    background-color: #24232E;
+    display: inline-block;
+}
+
+.instagram-icon {
+    height: 17px;
+}
+
+.twitter-icon {
+    height: 13px;
+}
+
+.facebook-icon {
+    height: 20px;
+}
+
+.fb-container {
+    padding: 1px 8px 3px 8px;;
+}
+
+.ig-container {
+    padding: 1px 9px 3px 9px;
+}
+
+.footer-links-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 95%;
+    margin-bottom: 23px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 75%;
+    color: #D9DBE1;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: var(--link-red);
+}
+
+.back-red {
+    background-color: var(--link-red) !important;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.email-send-icon {
+    width: 21px;
+    height: 15px;
+}
+
+.form-control {
+    border: 1px solid #3D3B45;
+    background-color: #3D3B45;
+    color: #D9DBE1;
+    font-size: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control::placeholder {
+    color: #D9DBE1;
 }
