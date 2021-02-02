@@ -43,10 +43,23 @@
     margin-right: 30px;
 }
 
+.hero-full-button {
+    font-size: 100%;
+    background-color: var(--link-red);
+    border-radius: 7px;
+    padding: 11px 50px;
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
 .hero-full-button:hover,
 .hero-full-button:active {
     background-color: var(--active-link-red);
     color: var(--white-text) !important;
+}
+
+.pr-2 {
+    padding-right: 10px;
 }
 
 /* ----------------------------------------------- */
@@ -262,7 +275,7 @@ footer {
     height: 15px;
 }
 
-.form-control {
+.contact-form-snippet {
     border: 1px solid #3D3B45;
     background-color: #3D3B45;
     color: #D9DBE1;
@@ -271,6 +284,6 @@ footer {
     padding-bottom: 10px;
 }
 
-.form-control::placeholder {
+.contact-form-snippet::placeholder {
     color: #D9DBE1;
 }

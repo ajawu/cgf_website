@@ -8,117 +8,123 @@
 {% endblock %}
 
 {% block page-body %}
-    <section id="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="{% static 'images/about-main-image.png' %}" alt="main-about-page" class="img-fluid">
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <h6 class="section-header-red pb-1 pt-2">
-                        About Us
-                    </h6>
-                    <p class="section-subheader pb-3">
-                        We connect, impact and grow together
-                    </p>
-                    <p class="about-text pb-3">
-                        Change does not happen unless you make it happen. The Classic Gentlemen Foundation was founded
-                        based on bringing about change in our environment.
-                        We do this by networking, creating businesses and directly impacting our immediate environment.
-                    </p>
-                    <a href="#" class="find-out-link">
-                        Meet our Executives <img src="{% static 'images/right-arrow.png' %}" alt="right-arrow"
-                                                 class="find-out-arrow"/>
-                    </a>
+    {% block faq-body %}
+        <section id="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="{% static 'images/about-main-image.png' %}" alt="main-about-page" class="img-fluid">
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <h6 class="section-header-red pb-1 pt-2">
+                            About Us
+                        </h6>
+                        <p class="section-subheader pb-3">
+                            We connect, impact and grow together
+                        </p>
+                        <p class="about-text pb-3">
+                            Change does not happen unless you make it happen. The Classic Gentlemen Foundation was
+                            founded
+                            based on bringing about change in our environment.
+                            We do this by networking, creating businesses and directly impacting our immediate
+                            environment.
+                        </p>
+                        <a href="#" class="find-out-link">
+                            Meet our Executives <img src="{% static 'images/right-arrow.png' %}" alt="right-arrow"
+                                                     class="find-out-arrow"/>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="vision-mission-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="mission-container p-5">
-                        <h6 class="section-header-red pb-2 pt-2 fw-bold">
-                            Our Mission
+        </section>
+        <section id="vision-mission-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mission-container p-5">
+                            <h6 class="section-header-red pb-2 pt-2 fw-bold">
+                                Our Mission
+                            </h6>
+                            <p class="mission-text">
+                                To Support and Empower one another, to succeed with family and career, to continually
+                                improve on our socialization skills for the relaxation of all members and to inspire a
+                                healthier community by supporting the needy and the less privileged (CSR).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <h6 class="section-header-red pb-1 pt-5">
+                            Our ViSION STATEMENT
                         </h6>
-                        <p class="mission-text">
-                            To Support and Empower one another, to succeed with family and career, to continually
-                            improve on our socialization skills for the relaxation of all members and to inspire a
-                            healthier community by supporting the needy and the less privileged (CSR).
+                        <p class="about-text mw-75">
+                            A group of gentlemen with the aim of socializing, impacting positively on our
+                            immediate environment and creating businesses.
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <h6 class="section-header-red pb-1 pt-5">
-                        Our ViSION STATEMENT
-                    </h6>
-                    <p class="about-text mw-75">
-                        A group of gentlemen with the aim of socializing, impacting positively on our
-                        immediate environment and creating businesses.
-                    </p>
+            </div>
+        </section>
+        <section id="executives-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="section-title pb-5">
+                            Meet our Executives
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Motayo Latunji - Chairman 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Motayo Latunji</p>
+                        <p class="member-position">Chairman</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Larry Olaoye- Vice Chairman 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Larry Olaoye</p>
+                        <p class="member-position">Vice chairman</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Kehinde Ogunleye- Gen Sec 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Kehinde Ogunleye</p>
+                        <p class="member-position">General Secretary</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Olushola Balogun Finance director 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Olusola Balogun</p>
+                        <p class="member-position">Financial Director</p>
+                    </div>
+                    <div class="p-3"></div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Adebola Adebode - PR Director 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Adebola Adebode</p>
+                        <p class="member-position">PR Director</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Niyi Ogbaro- Social Director 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Niyi Ogbaro</p>
+                        <p class="member-position">Social Director</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/Eng 1.png' %}" alt="member-image"
+                             class="member-image">
+                        <p class="member-name pt-2">Eng. Olamilekan Omojowo</p>
+                        <p class="member-position">Equity Director</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="executives-section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h5 class="section-title pb-5">
-                        Meet our Executives
-                    </h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Motayo Latunji - Chairman 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Motayo Latunji</p>
-                    <p class="member-position">Chairman</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Larry Olaoye- Vice Chairman 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Larry Olaoye</p>
-                    <p class="member-position">Vice chairman</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Kehinde Ogunleye- Gen Sec 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Kehinde Ogunleye</p>
-                    <p class="member-position">General Secretary</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Olushola Balogun Finance director 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Olusola Balogun</p>
-                    <p class="member-position">Financial Director</p>
-                </div>
-                <div class="p-3"></div>
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Adebola Adebode - PR Director 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Adebola Adebode</p>
-                    <p class="member-position">PR Director</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Niyi Ogbaro- Social Director 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Niyi Ogbaro</p>
-                    <p class="member-position">Social Director</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="{% static 'images/Eng 1.png' %}" alt="member-image"
-                         class="member-image">
-                    <p class="member-name pt-2">Eng. Olamilekan Omojowo</p>
-                    <p class="member-position">Equity Director</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    {% endblock %}
+    {% block contact-body %}
+    {% endblock %}
     <section id="faq-section">
         <div class="container">
             <div class="row">
@@ -143,7 +149,7 @@
                                    href="#helpFive" role="button" aria-expanded="false" aria-controls="helpFive">
                                     <!-- Title -->
                                     <span class="card-title">
-                                        Who can volunteer on Educate Me?
+                                        What does the Classic Gentlemen Foundation stand for?
                                     </span>
                                     <!-- Metadata -->
                                     <div class="text-muted ml-auto">
@@ -159,9 +165,7 @@
                                     <div>
                                         <!-- Text -->
                                         <p class="card-body">
-                                            Any person over 18 years old with valid identification, or teenagers between
-                                            13 and 16 years
-                                            old accompanied by a guardian with valid identification.
+
                                         </p>
                                     </div>
                                 </div>
@@ -173,7 +177,7 @@
                                    href="#helpSix" role="button" aria-expanded="false" aria-controls="helpSix">
                                     <!-- Title -->
                                     <span class="card-title">
-                                What's the maximum amount I can donate?
+                                What is the official membership fee to join the club?
                                 </span>
                                     <!-- Metadata -->
                                     <div class="text-muted ml-auto">
@@ -189,7 +193,7 @@
                                     <div>
                                         <!-- Text -->
                                         <p class="card-body">
-                                            There is no maximum amount :)
+                                            The official membership fee to join the club is 50,000 NGN
                                         </p>
                                         <div class="d-flex align-items-center">
                                         </div>
@@ -203,7 +207,7 @@
                                    href="#helpSeven" role="button" aria-expanded="false" aria-controls="helpSeven">
                                     <!-- Title -->
                                     <span class="card-title">
-                                What if I get debited and my donation is not visible?
+                                How can I join the Classic Gentlemen Foundation?
                                 </span>
                                     <!-- Metadata -->
                                     <div class="text-muted ml-auto">
@@ -219,8 +223,7 @@
                                     <div>
                                         <!-- Text -->
                                         <p class="card-body">
-                                            Send a message to support if the problem persists past 10 minutes with
-                                            no refund made to your bank account
+                                            How to join info
                                         </p>
                                         <div class="d-flex align-items-center">
                                         </div>
@@ -234,7 +237,7 @@
                                    href="#helpEight" role="button" aria-expanded="false" aria-controls="helpEight">
                                     <!-- Title -->
                                     <span class="card-title">
-                                How will my donated book be collected?
+                                Does CGF have any political or government affiliation?
                                 </span>
                                     <!-- Metadata -->
                                     <div class="text-muted ml-auto">
@@ -250,44 +253,7 @@
                                     <div>
                                         <!-- Text -->
                                         <p class="card-body">
-                                            You can send it to any Educate-Me office or drop off centre via courier
-                                            services
-                                            or if you have a large number of books contact us and we will get them off
-                                            hands
-                                        </p>
-                                        <div class="d-flex align-items-center">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <!-- Toggle -->
-                                <a class="d-flex align-items-center text-reset text-decoration-none"
-                                   data-toggle="collapse"
-                                   href="#helpEight" role="button" aria-expanded="false" aria-controls="helpEight">
-                                    <!-- Title -->
-                                    <span class="card-title">
-                                My question is not here?
-                                </span>
-                                    <!-- Metadata -->
-                                    <div class="text-muted ml-auto">
-                                        <!-- Chevron -->
-                                        <span class="collapse-chevron text-muted">
-                                        <ion-icon name="chevron-down-outline" class="chevron-style"></ion-icon>
-                                    </span>
-                                    </div>
-                                </a>
-                                <!-- / .row -->
-                                <!-- Collapse -->
-                                <div class="collapse" id="helpEight" data-parent="#helpAccordionTwo">
-                                    <div>
-                                        <!-- Text -->
-                                        <p class="card-body">
-                                            Contact us directly for any clarification. Visit our
-                                            <a href="#" class="contact-link">
-                                                contact page
-                                            </a>
-                                            for details on how to contact us.
+                                            Political / Government affiliation
                                         </p>
                                         <div class="d-flex align-items-center">
                                         </div>
@@ -298,7 +264,7 @@
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
-                <div class="col-sm-4">
+                <div class="col-sm-4" id="pricing-section">
                     <div class="pt-3 pb-3 join-card d-flex align-items-center flex-column">
                         <p class="join-title">Membership</p>
                         <p class="amount-text">
@@ -326,7 +292,7 @@
                     </div>
                     <a href="#" class="find-out-link d-block text-right">
                         More questions? Contact Us <img src="{% static 'images/right-arrow.png' %}" alt="right-arrow"
-                                                 class="find-out-arrow"/>
+                                                        class="find-out-arrow"/>
                     </a>
                 </div>
             </div>

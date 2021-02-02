@@ -189,3 +189,32 @@
     /*height: 12px;*/
     width: 25px;
 }
+
+/* ------------------------------------------------- */
+/* ----------------- CONTACT SECTION --------------- */
+/* ------------------------------------------------- */
+
+#contact-section {
+    padding: 80px 0;
+}
+
+.contact-input {
+    border: 1px solid #DEDEDE;
+    font-size: 82%;
+    padding: 17px 0 17px 20px ;
+}
+
+.contact-subtitle {
+    font-size: 90%;
+    max-width: 450px;
+}
+
+.lighter-back-social {
+    background-color: #E2E2E2;
+}
+
+.address-text {
+    font-weight: 500;
+    font-size: 95%;
+    max-width: 440px;
+}

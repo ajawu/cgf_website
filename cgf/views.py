@@ -1,4 +1,5 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, CreateView
+from .forms import ContactForm
 
 
 class HomeView(TemplateView):
@@ -7,3 +8,8 @@ class HomeView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = 'cgf/about.html'
+
+
+class ContactView(CreateView):
+    template_name = 'cgf/contact.html'
+    form_class = ContactForm

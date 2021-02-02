@@ -1,0 +1,100 @@
+{% extends 'cgf/about.html' %}
+{% load static %}
+{% block faq-body %}{% endblock %}
+
+{% block contact-body %}
+    <section id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <p class="section-title subtitle">
+                        <span class="red-text">Contact Us</span>
+                    </p>
+                    <p class="contact-subtitle pb-5">
+                        You can reach out to us on our various platforms or leave a message and
+                        we will get back to you shortly.
+                    </p>
+                    <p class="address-text pb-2">
+                        No. 7, Fadeyi Road, Off Adeniyi Jones, Ikeja, Lagos, Nigeria
+                    </p>
+                    <p class="address-text pb-2">
+                        <img src="{% static 'images/phone-icon.png' %}" alt="phone-icon" class="pr-2" />
+                        +234 817 739 3681
+                    </p>
+                    <p class="address-text pb-2">
+                        <img src="{% static 'images/email-icon.png' %}" alt="email-icon" class="pr-2" />
+                        classicgentlemen2020@gmail.com
+                    </p>
+
+                    <ul class="social-icons-list">
+                        <li>
+                            <div class="social-icon-container ig-container lighter-back-social">
+                                <img src="{% static 'images/instagram-black.png' %}" alt="instagram-icon"
+                                     class="instagram-icon"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="social-icon-container middle-icon lighter-back-social">
+                                <img src="{% static 'images/twitter-black-icon.png' %}" alt="twitter-icon"
+                                     class="twitter-icon"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="social-icon-container fb-container lighter-back-social">
+                                <img src="{% static 'images/facebook-black.png' %}" alt="facebook-icon"
+                                     class="facebook-icon"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <form action="{% url 'cgf:contact_view' %}" method="post" class="contact-form">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col pb-5">
+                                <input type="text" class="form-control contact-input shadow-none" id="id_name"
+                                       placeholder="First Name" name="first_name">
+                                <small id="emailHelp" class="form-text text-muted">
+                                    {{ form.first_name.errors.as_text }}
+                                </small>
+                            </div>
+                            <div class="col pb-5">
+                                <input type="text" class="form-control contact-input shadow-none" id="id_name"
+                                       placeholder="Last Name" name="last_name">
+                                <small id="emailHelp" class="form-text text-muted">
+                                    {{ form.last_name.errors.as_text }}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pb-5">
+                                <input type="email" class="form-control contact-input shadow-none" id="id_email"
+                                       placeholder="Email" name="email">
+                                <small id="emailHelp" class="form-text text-muted">
+                                    {{ form.email.errors.as_text }}
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <textarea name="message" rows="5" class="form-control contact-input shadow-none"
+                                          id="id_message" placeholder="Message you want to send"></textarea>
+                                <small id="emailHelp" class="form-text text-muted">
+                                    {{ form.message.errors.as_text }}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-4 d-flex justify-content-end">
+                                <button type="submit" class="btn hero-full-button text-white join-link">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
