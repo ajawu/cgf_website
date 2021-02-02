@@ -264,8 +264,8 @@
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
-                <div class="col-sm-4" id="pricing-section">
-                    <div class="pt-3 pb-3 join-card d-flex align-items-center flex-column">
+                <div class="col-sm-4" id="membership-perks">
+                    <div class="pt-3 pb-3 join-card d-flex align-items-center flex-column" id="pricing">
                         <p class="join-title">Membership</p>
                         <p class="amount-text">
                             50,000 <span class="subscript-year">/yr</span>
@@ -290,7 +290,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="find-out-link d-block text-right">
+                    <a href="{% url 'cgf:contact_view' %}" class="find-out-link d-block text-right">
                         More questions? Contact Us <img src="{% static 'images/right-arrow.png' %}" alt="right-arrow"
                                                         class="find-out-arrow"/>
                     </a>
