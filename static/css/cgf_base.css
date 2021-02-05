@@ -7,7 +7,7 @@
     --black-text: #0B0D17;
     --gray-text: #18191F;
     --light-gray-text: #656565;
-    --white-text: #fff
+    --white-text: #fff;
 }
 
 /* ----------------------------------------------- */
@@ -60,6 +60,34 @@
 
 .pr-2 {
     padding-right: 10px;
+}
+
+.red-text-small {
+    color: var(--link-red);
+    font-size: 70%;
+    cursor: pointer;
+}
+
+/* ----------------- FORM DESIGN --------------- */
+.contact-input {
+    border: 1px solid #DEDEDE;
+    font-size: 82%;
+    padding: 17px 0 17px 20px ;
+}
+
+.contact-subtitle {
+    font-size: 90%;
+    max-width: 450px;
+}
+
+.lighter-back-social {
+    background-color: #E2E2E2;
+}
+
+.address-text {
+    font-weight: 500;
+    font-size: 95%;
+    max-width: 440px;
 }
 
 /* ----------------------------------------------- */
@@ -136,7 +164,7 @@ header {
 }
 
 /* ----------------------------------------------- */
-/* ----------------- FOOTER SECTION --------------- */
+/* ----------------- FOOTER SECTION -------------- */
 /* ----------------------------------------------- */
 
 footer {
@@ -286,4 +314,96 @@ footer {
 
 .contact-form-snippet::placeholder {
     color: #D9DBE1;
+}
+
+/* ----------------------------------------------- */
+/* ----------------- FOOTER SECTION -------------- */
+/* ----------------------------------------------- */
+
+.modal-title {
+    color: #000;
+    font-weight: 800;
+    font-size: 180%;
+    line-height: 30px;
+}
+
+.modal-subtitle {
+    font-weight: 400;
+    font-size: 90%;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.red-text-underline {
+    color: var(--link-red);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blank-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.blank-button:focus {
+    outline: none;
+    border: none;
+}
+
+/* ---------------------------------------------- */
+/* ----------------- MODAL SECTION -------------- */
+/* ---------------------------------------------- */
+
+.modal-dialog {
+    max-width: 550px;
+}
+
+.modal-title-container {
+    padding: 48px 0 0;
+}
+
+.modal-close {
+    padding: 25px 0 0;
+}
+
+.forgot-password:link,
+.forgot-password:visited {
+    text-decoration: none;
+    font-size: 80%;
+    color: #000;
+    display: block;
+    text-align: right;
+}
+
+.forgot-password:hover,
+.forgot-password:active {
+    text-decoration: underline;
+    color: #000;
+}
+
+.message-bar {
+    border-radius: 6px;
+    border: 1px solid #EB0000;
+    background-color: #F9F9F9;
+}
+
+.message-red {
+    color: #B81D15;
+    font-size: 76%;
+    margin: 10px 15px 10px 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.red-side {
+    background-color: var(--link-red);
+    border-radius: 5px 0 0 5px;
+}
+
+.agreement-text {
+    color: #000;
+    font-size: 71%;
+    margin: 20px 0 0;
+    text-align: center;
 }
