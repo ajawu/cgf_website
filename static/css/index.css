@@ -154,6 +154,12 @@
     font-size: 85%;
 }
 
+.event-image {
+    border-radius: 5px;
+    height: 196px;
+    width: 350px;
+}
+
 .event-title {
     font-size: 100%;
     font-weight: 600;
