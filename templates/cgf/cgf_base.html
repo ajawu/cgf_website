@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div class="modal-body p-5 pt-2">
-                <form action="{% url 'users:register_request' %}" method="post" class="contact-form">
+                <form action="{% url 'cgf:join_request' %}" method="post" class="contact-form">
                     {% csrf_token %}
                     <div class="row">
                         <div class="col pb-4">

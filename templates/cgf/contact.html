@@ -51,6 +51,13 @@
                     <form action="{% url 'cgf:contact_view' %}" method="post" class="contact-form">
                         {% csrf_token %}
                         <div class="row">
+                            {% if messages %}
+                                <ul class="messages">
+                                    {% for message in messages %}
+                                        <p class="contact-subtitle {% if message.tags %} {{ message.tags }} {% endif %}">{{ message }}</p>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
                             <div class="col pb-5">
                                 <input type="text" class="form-control contact-input shadow-none" id="id_name"
                                        placeholder="First Name" name="first_name">

@@ -2,15 +2,18 @@
 /* ----------------- HERO SECTION --------------- */
 /* ---------------------------------------------- */
 .header-padding {
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .hero-text {
     font-weight: 800;
     color: var(--white-text);
-    font-size: 320%;
+    font-size: 280%;
+}
 
+.header-aligner {
+    width: 73px;
 }
 
 .gold-light {

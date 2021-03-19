@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block header-section %}
-    <div class="container pt-5 pb-5">
+    <div class="container-fluid pt-5 pb-5 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
         <div class="row pb-3">
+            <div class="header-aligner d-none d-md-block d-lg-block">
+            </div>
             <div class="col-sm header-padding">
                 <h1 class="hero-text">
                     Classic Gentlemen <span class="gold-light">Foundation</span>
@@ -28,12 +30,39 @@
                     <a href="" class="hero-sign-in">SIGN IN</a>
                 </p>
             </div>
-            <div class="col-sm pt-1">
+            <div class="col-sm p-0 d-none d-md-block d-lg-block d-xl-block d-xxl-bloc">
                 <img src="{% static 'images/hero-image.svg' %}" alt="hero-image"
                      class="img-fluid d-none d-md-block d-lg-block"/>
-                <img src="{% static 'images/hero-mobile.svg' %}" alt="hero-image-mobile"
-                     class="img-fluid d-block d-sm-none"
-                />
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-5 d-md-block d-lg-none d-xl-none d-xxl-none">
+        <div class="row pb-3">
+            <div class="header-aligner d-none d-md-block d-lg-block">
+            </div>
+            <div class="col-sm header-padding">
+                <h1 class="hero-text">
+                    Classic Gentlemen <span class="gold-light">Foundation</span>
+                </h1>
+                <p class="hero-subtext pt-2 pb-2">
+                    Connect, create businesses, grow and impact your immediate environment with like minds.
+                </p>
+                <a href="" class="hero-full-button text-white">
+                    Join Us
+                </a>
+                <p class="d-inline-block p-2 hero-play-link">
+                    Our Highlights
+                    <img src="{% static 'images/play_circle_outline.svg' %}" class="p-2"
+                         alt="media-play-outline">
+                </p>
+                <p class="already-member-text">
+                    Already a member of Classic Gentlemen Social Club?
+                    <a href="" class="hero-sign-in">SIGN IN</a>
+                </p>
+            </div>
+            <div class="col-sm p-0 d-none d-md-none d-lg-block d-xl-block d-xxl-bloc">
+                <img src="{% static 'images/hero-image.svg' %}" alt="hero-image"
+                     class="img-fluid d-none d-md-block d-lg-block"/>
             </div>
         </div>
     </div>
@@ -43,7 +72,14 @@
     <section id="join-us-section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 d-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                    <h4 class="join-us-header">Why Join Us?</h4>
+                    <p class="join-us-subheader">
+                        We are growth and development oriented.
+                        We provide the best support for our members and our community.
+                    </p>
+                </div>
+                <div class="col-sm-12 d-md-block d-lg-none d-xl-none d-xxl-none">
                     <h4 class="join-us-header">Why Join Us?</h4>
                     <p class="join-us-subheader">
                         We are growth and development oriented.
@@ -89,7 +125,7 @@
                         <img src="{% static 'images/development-icon.png' %}" alt="development-icon">
                     </div>
                     <h6 class="join-card-title pt-4 pb-1">
-                        Community Development
+                        Develop Community
                     </h6>
                     <p class="join-card-body">
                         Contribute to societal goals by volunteering and engaging in ethical activities!

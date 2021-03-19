@@ -407,3 +407,11 @@ footer {
     margin: 20px 0 0;
     text-align: center;
 }
+
+.success {
+    color: #198754 !important;
+}
+
+.error {
+    color: #B81D15 !important;
+}
