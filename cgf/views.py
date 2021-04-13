@@ -1,8 +1,9 @@
 from django.views.generic import TemplateView, FormView
-from django.shortcuts import redirect, HttpResponse
-from django.http import Http404
-from .forms import ContactForm, JoinForm
+from cgf.forms import ContactForm, JoinForm, NewsletterForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
+
+from django.urls import reverse_lazy
 
 
 class HomeView(TemplateView):
@@ -11,6 +12,21 @@ class HomeView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = 'cgf/about.html'
+
+
+class NewsLetterView(FormView):
+    form_class = NewsletterForm
+    success_url = reverse_lazy('cgf:home_view')
+
+    def form_valid(self, form):
+        form.send_email()
+        form.save()
+        messages.success(self.request, 'Email Address added to newsletter.')
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'An error occurred while saving your email address')
+        return super().form_invalid(form)
 
 
 class ContactView(FormView):
@@ -38,3 +54,7 @@ class JoinRequestView(FormView):
         messages.success(self.request, 'Message saved successfully.')
         form.save()
         return super().form_valid(form)
+
+
+class DashboardView(LoginRequiredMixin, TemplateView):
+    template_name = 'cgf/dashboard.html'

@@ -1,5 +1,6 @@
 from django.contrib import admin
-from cgf.models import Contact, JoinRequest
+from cgf.models import Contact, JoinRequest, Event
+
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
@@ -15,3 +16,10 @@ class JoinRequestAdmin(admin.ModelAdmin):
     list_editable = ('is_approved',)
     list_filter = ('is_approved',)
     readonly_fields = ('full_name', 'email', 'phone_number')
+
+
+@admin.register(Event)
+class EventAdmin(admin.ModelAdmin):
+    list_display = ('name', 'is_holding', 'time', 'is_complete')
+    list_filter = ('is_holding',)
+    list_editable = ('is_complete',)

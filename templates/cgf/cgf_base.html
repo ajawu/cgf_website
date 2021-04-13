@@ -223,6 +223,7 @@
         </div>
     </div>
 </div>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -279,7 +280,7 @@
                 <a href="{% url 'cgf:about_view' %}" class="footer-link">About us</a>
                 <a href="#" class="footer-link">Blog</a>
                 <a href="{% url 'cgf:contact_view' %}" class="footer-link">Contact us</a>
-                <a href="/about/#pricing" class="footer-link">Pricing</a>
+                <a href="{% url 'cgf:about_view' %}#pricing" class="footer-link">Pricing</a>
             </div>
             <div class="col-sm-2 pb-5">
                 <h6 class="footer-links-title">Support</h6>
@@ -288,14 +289,14 @@
             </div>
             <div class="col-sm-3 pb-5">
                 <h6 class="footer-links-title">Stay up to date</h6>
-                <form action="" method="post">
+                <form action="{% url 'cgf:newsletter' %}" method="post" id="newsletter-form">
                     {% csrf_token %}
                     <div class="form-group mb-4">
                         <div class="input-group">
                             <input type="email" placeholder="Your email address"
                                    class="form-control contact-form-snippet shadow-none"
                                    required id="id_password" name="password">
-                            <span class="input-group-text back-red" id="basic-addon2">
+                            <span class="input-group-text back-red" id="basic-addon2" onclick="">
                                 <img src="{% static 'images/send-icon.png' %}" alt="send-icon" class="email-send-icon">
                             </span>
                         </div>

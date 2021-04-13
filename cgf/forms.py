@@ -1,7 +1,8 @@
 from django import forms
-from .models import Contact, JoinRequest
+from cgf.models import Contact, JoinRequest, Newsletter
 from django.conf import settings
 from django.core.mail import send_mail
+from cgf.tasks import send_email_delayed
 
 
 class ContactForm(forms.ModelForm):
@@ -11,16 +12,10 @@ class ContactForm(forms.ModelForm):
         exclude = ['is_completed']
     
     def send_email(self):
-        send_mail('New Contact Message - Classic Gentlemen', 
-            f"""
-Hey Admin,
-
-{self.cleaned_data['message']}.
-
-Thanks, {self.cleaned_data['first_name']} {self.cleaned_data['last_name']}
-            """,
-            settings.DEFAULT_FROM_EMAIL,
-            [settings.ADMIN_CONTACT_EMAIL, self.cleaned_data['email']])
+        send_email_delayed.delay(sender_email=self.cleaned_data['email'], message_text=self.cleaned_data['message'],
+                                 sender_name=f"{self.cleaned_data['first_name']} {self.cleaned_data['last_name']}",
+                                 email_class='contact')
+        return True
 
 
 class JoinForm(forms.ModelForm):
@@ -30,14 +25,18 @@ class JoinForm(forms.ModelForm):
         exclude = ['is_approved']
 
     def send_email(self):
-        send_mail('New Join Request - Classic Gentlemen', 
-            f"""Hey Admin,
+        send_email_delayed(sender_email=self.cleaned_data['email'], message_text=self.cleaned_data['message'],
+                           sender_name=self.cleaned_data['full_name'], email_class='join', recipient_email='',
+                           sender_phone=self.cleaned_data['phone_number'])
+        return True
 
-My name is {self.cleaned_data['full_name']} and I am interested in joining the Classic gentlemen's social club. 
-You can contact me for any additional information via phone - {self.cleaned_data['phone_number']}
-or my email - {self.cleaned_data['email']}.
 
-Thanks, {self.cleaned_data['full_name']}
-            """,
-            settings.DEFAULT_FROM_EMAIL,
-            [settings.ADMIN_CONTACT_EMAIL])
+class NewsletterForm(forms.ModelForm):
+    class Meta:
+        model = Newsletter
+        fields = '__all__'
+
+    def send_email(self):
+        send_email_delayed(sender_email=self.cleaned_data['email_address'], email_class='newsletter')
+
+        return True

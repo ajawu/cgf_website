@@ -1,6 +1,6 @@
 .idea
 *.pyc
-settings.env
+.env
 .theia
 .vscode
 db.sqlite3

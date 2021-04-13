@@ -1,3 +1,6 @@
-Django==3.1.5
+Django==3.2
 psycopg2==2.8.6
 django-allauth==0.44.0
+python-decouple==3.4
+flower~=0.9.7
+Pillow~=8.2.0
