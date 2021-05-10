@@ -1,9 +1,10 @@
-from django.views.generic import TemplateView, FormView
-from cgf.forms import ContactForm, JoinForm, NewsletterForm
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
+from django.views.generic import TemplateView, FormView, ListView
+
+from cgf.forms import ContactForm, JoinForm, NewsletterForm
+from cgf.models import Event
 
 
 class HomeView(TemplateView):
@@ -58,3 +59,11 @@ class JoinRequestView(FormView):
 
 class DashboardView(LoginRequiredMixin, TemplateView):
     template_name = 'cgf/dashboard.html'
+    
+    def get_context_data(self, **kwargs):
+        return super(DashboardView, self).get_context_data(**kwargs)
+
+
+class EventsList(ListView):
+    model = Event
+    template_name = ''

@@ -1,13 +1,53 @@
-{% extends 'cgf/cgf_base.html' %}
+{% extends 'cgf/dashboard_base.html' %}
 {% load static %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
 
 {% block additional_css %}
 {% endblock %}
 
 {% block page-body %}
     <div class="container">
-        <div class="row">
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-6">
+                <h3 class="section-title">Top Posts from Medium</h3>
+                <div class="spacer"></div>
+                <div class="empty-box text-center no-post-padding">
+                    <div class="gray-circle-container d-inline-block">
+                        <img src="{% static 'images/trackpad-image.png' %}" alt="trackpad-icon">
+                    </div>
+                    <h5 class="box-title">No Blog Posts</h5>
+                    <p class="box-text mb-3">Top CGF Blog posts will appear here</p>
+                    <a href="#" class="red-button box-link d-inline-block mt-2">Go to CGF Blog</a>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <div class="title-block d-flex limiter-400">
+                    <div class="d-flex justify-content-start" style="flex: 1">
+                        <h3 class="section-title d-inline-block">Upcoming Events</h3>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a class="section-subtitle red-link">View All Events</a>
+                    </div>
+                </div>
+                <div class="empty-box text-center mt-4 limiter-400 no-vote-padding">
+                    <img src="{% static 'images/placeholder.png' %}" alt="placeholder-icon" height="70px">
+                    <h5 class="box-title">No Upcoming Events</h5>
+                    <p class="box-text mb-3">Upcoming Events will appear here</p>
+                    <a href="#" class="red-button box-link d-inline-block">All Events</a>
+                </div>
 
+                <div class="empty-box text-center no-vote-top no-vote-padding limiter-400">
+                    <img src="{% static 'images/placeholder.png' %}" alt="placeholder-icon" height="70px">
+                    <h5 class="box-title">No Votes Ongoing</h5>
+                    <p class="box-text mb-3">There are currently no elections</p>
+                    <a href="#" class="gray-button box-link d-inline-block">Vote Now</a>
+                </div>
+
+            </div>
         </div>
     </div>
     <h1 class="m-5 bg-white"></h1>

@@ -9,4 +9,6 @@ urlpatterns = [
     path('contact/', views.ContactView.as_view(), name='contact_view'),
     path('join/', views.JoinRequestView.as_view(), name='join_request'),
     path('newsletter/', views.NewsLetterView.as_view(), name='newsletter'),
+    path('events/', views.NewsLetterView.as_view(), name='events_list'),
+    path('settings/personal', views.NewsLetterView.as_view(), name='settings_personal'),
 ]

@@ -171,3 +171,5 @@ ADMIN_CONTACT_EMAIL = config('ADMIN_CONTACT_EMAIL')
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 LOGIN_REDIRECT_URL = '/dashboard'
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
