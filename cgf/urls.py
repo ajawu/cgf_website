@@ -10,5 +10,6 @@ urlpatterns = [
     path('join/', views.JoinRequestView.as_view(), name='join_request'),
     path('newsletter/', views.NewsLetterView.as_view(), name='newsletter'),
     path('events/', views.NewsLetterView.as_view(), name='events_list'),
+    path('suspended/', views.SuspendedView.as_view(), name='suspended_page'),
     path('settings/personal', views.NewsLetterView.as_view(), name='settings_personal'),
 ]

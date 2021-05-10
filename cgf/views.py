@@ -67,3 +67,7 @@ class DashboardView(LoginRequiredMixin, TemplateView):
 class EventsList(ListView):
     model = Event
     template_name = ''
+
+
+class SuspendedView(TemplateView):
+    template_name = 'cgf/suspended.html'

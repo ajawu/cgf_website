@@ -1,0 +1,29 @@
+{% extends 'cgf/dashboard_base.html' %}
+{% load static %}
+
+{% block title %}
+    Account Suspended
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="{% static 'css/suspended.css' %}">
+{% endblock %}
+
+{% block page-body %}
+    <div class="container">
+        <div class="row my-5">
+            <div class="col d-flex justify-content-center align-items-center flex-column suspend-margin">
+                <img src="{% static 'images/card-icon.png' %}" alt="credit-card-icon" height="130px">
+                <h5 class="page-title">
+                    Your Subscription fee is expired
+                </h5>
+                <p class="page-subtitle mb-4">
+                    Renew your subscription to get back into the Classic Gentlemen Foundation
+                </p>
+                <a href="#" class="red-button box-link">
+                    Renew Subscription
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -119,10 +119,21 @@
     color: #fff;
 }
 
+.red-button:hover,
+.red-button:active {
+    color: #fff;
+    background-color: #cb221a;
+}
+
 .gray-button {
     background-color: #8C8C8C;
     color: #fff;
     border-radius: 8px;
+}
+
+.gray-button:hover,
+.gray-button:active {
+    color: #fff;
 }
 
 .box-link {
@@ -131,12 +142,6 @@
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s;
-}
-
-.box-link:hover,
-.box-link:active {
-    color: #fff;
-    background-color: #cb221a;
 }
 
 .no-vote-padding {
