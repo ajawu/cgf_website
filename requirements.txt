@@ -4,3 +4,4 @@ django-allauth==0.44.0
 python-decouple==3.4
 flower~=0.9.7
 Pillow~=8.2.0
+redis~=3.5.3

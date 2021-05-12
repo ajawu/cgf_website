@@ -25,9 +25,9 @@ class JoinForm(forms.ModelForm):
         exclude = ['is_approved']
 
     def send_email(self):
-        send_email_delayed(sender_email=self.cleaned_data['email'], message_text=self.cleaned_data['message'],
-                           sender_name=self.cleaned_data['full_name'], email_class='join', recipient_email='',
-                           sender_phone=self.cleaned_data['phone_number'])
+        send_email_delayed.delay(sender_email=self.cleaned_data['email'],
+                                 sender_name=self.cleaned_data['full_name'], email_class='join', recipient_email='',
+                                sender_phone=self.cleaned_data['phone_number'])
         return True
 
 

@@ -4,7 +4,7 @@ from django.conf import settings
 from cgf_website.celery import celery_log
 
 
-@app.task(bind=True)
+@app.task
 def send_email_delayed(sender_email: str = '', message_text: str = '', sender_name: str = '', email_class: str = '',
                        recipient_email=None, sender_phone: str = ''):
     """
